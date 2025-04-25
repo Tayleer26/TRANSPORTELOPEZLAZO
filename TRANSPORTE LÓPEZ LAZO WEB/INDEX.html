@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes López Lazo | Transporte Escolar Seguro</title>
+    <link rel="stylesheet" href="STYLESS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-bus"></i>
+            <h1>Transportes <span>López Lazo</span></h1>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#finanzas">Finanzas</a>
+            <a href="#registro">Registro</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido a Transporte López Lazo</h2>
+            <p>Con más de 15 años de experiencia, somos líderes en transporte escolar seguro y <br>
+            confiable para los estudiantes del Colegio Jesús Divino Obrero, ubicado en Managua-Altamira.<br>
+            Nuestra misión es ofrecer tranquilidad a los padres y comodidad a los niños y adolescentes<br>
+            que confían en nosotros diariamente para llegar al colegio y regresar a sus hogares.</p>
+
+            <a href="#contacto" class="btn">Contratar servicio</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-school"></i>
+                <h3>Transporte Escolar</h3>
+                <p>Rutas fijas mañana y tarde con 4 microbuses</p>
+                <ul>
+                    <li><strong>Horarios:</strong></li>
+                    <li>5:30 AM - 7:00 AM</li>
+                    <li>10:30 AM - 1:00 PM</li>
+                    <li>5:00 PM - 6:20 PM</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-route"></i>
+                <h3>Viajes Personalizados</h3>
+                <p>Servicio bajo demanda para necesidades específicas</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad Garantizada</h3>
+                <p>15 años de experiencia con conductores certificados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Finanzas (Gráfico) -->
+    <section id="finanzas" class="finances">
+        <h2>Estadísticas Financieras</h2>
+        <div class="finance-grid">
+            <div class="finance-card">
+                <h3>Ingresos Mensuales</h3>
+                <p class="amount">C$ 107,200</p>
+            </div>
+            <div class="finance-card">
+                <h3>Gastos en Personal</h3>
+                <p class="amount">C$ 44,000</p>
+                <p>(4 choferes x C$8,000 + 3 ayudantes x C$4,000)</p>
+            </div>
+            <div class="finance-chart">
+                <canvas id="financeChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Registro -->
+    <section id="registro" class="register">
+        <h2>Registro Digital de Estudiantes</h2>
+        <div class="register-form">
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Estudiante:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="grado">Grado/Nivel:</label>
+                    <input type="text" id="grado" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección de Recogida:</label>
+                    <input type="text" id="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="contacto">Contacto de Emergencia:</label>
+                    <input type="tel" id="contacto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensualidad">Mensualidad (C$):</label>
+                    <input type="number" id="mensualidad" required>
+                </div>
+                <button type="submit" class="btn">Guardar Registro</button>
+            </form>
+            <div class="students-list">
+                <h3>Estudiantes Registrados</h3>
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Grado</th>
+                            <th>Mensualidad</th>
+                            <th>Pagado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Datos se llenarán con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctenos</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+                <p>Colegio Jesús Divino Obrero, Managua-Altamira</p>
+                
+                <h3><i class="fas fa-clock"></i> Horario de Oficina</h3>
+                <p>Lunes a Viernes: 7:00 AM - 5:00 PM</p>
+                
+                <h3><i class="fas fa-phone"></i> Teléfono</h3>
+                <p>+505 1234 5678</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-bus"></i>
+                <h3>Transportes <span>López Lazo</span></h3>
+                <p>Transporte escolar seguro desde 2008</p>
+            </div>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Transportes López Lazo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="SCRIPTS.JS"></script>
+</body>
+</html>

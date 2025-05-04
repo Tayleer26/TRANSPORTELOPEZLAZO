@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes López Lazo - Registro</title>
+    <link rel="stylesheet" href="STYLESS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-bus"></i>
+            <h1>Transportes <span>López Lazo</span></h1>
+        </div>
+        <nav>
+            <a href="INDEX.HTML" class="nav-link">Inicio</a>
+            <a href="finanzas.html" class="nav-link">Finanzas</a>
+            <a href="registro.html" class="nav-link active">Registro</a>
+            <a href="pagos.html" class="nav-link">Pagos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Registro -->
+    <main class="main-content">
+        <section class="content-section active">
+            <h2>Registro Estudiantil</h2>
+            <form id="studentForm">
+                <input type="hidden" id="studentId">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label>Nombre Completo:</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Grado Escolar:</label>
+                        <select id="grado" required>
+                            <option value="preescolar">Preescolar</option>
+                            <option value="primaria">Primaria</option>
+                            <option value="secundaria">Secundaria</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Registrar Estudiante</button>
+                </div>
+            </form>
+            
+            <div class="table-container">
+                <h3>Estudiantes Registrados</h3>
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Grado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Transportes López Lazo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="SCRIPTS.JS"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes López Lazo - Pagos</title>
+    <link rel="stylesheet" href="STYLESS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-bus"></i>
+            <h1>Transportes <span>López Lazo</span></h1>
+        </div>
+        <nav>
+            <a href="INDEX.HTML" class="nav-link">Inicio</a>
+            <a href="finanzas.html" class="nav-link">Finanzas</a>
+            <a href="registro.html" class="nav-link">Registro</a>
+            <a href="pagos.html" class="nav-link active">Pagos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Pagos -->
+    <main class="main-content">
+        <section class="content-section active">
+            <h2>Sistema de Pagos</h2>
+            <div class="payment-form">
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label>Seleccionar Estudiante:</label>
+                        <select id="studentSelect" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Monto (C$):</label>
+                        <input type="number" id="monto" required>
+                    </div>
+                    <button type="submit" class="btn">Registrar Pago</button>
+                </form>
+            </div>
+            
+            <div class="table-container">
+                <h3>Historial de Pagos</h3>
+                <table id="paymentsTable">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Estudiante</th>
+                            <th>Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Transportes López Lazo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="SCRIPTS.JS"></script>
+</body>
+</html>

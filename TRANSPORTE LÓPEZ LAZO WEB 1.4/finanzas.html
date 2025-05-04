@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes López Lazo - Finanzas</title>
+    <link rel="stylesheet" href="STYLESS.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-bus"></i>
+            <h1>Transportes <span>López Lazo</span></h1>
+        </div>
+        <nav>
+            <a href="INDEX.HTML" class="nav-link">Inicio</a>
+            <a href="finanzas.html" class="nav-link active">Finanzas</a>
+            <a href="registro.html" class="nav-link">Registro</a>
+            <a href="pagos.html" class="nav-link">Pagos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Finanzas -->
+    <main class="main-content">
+        <section class="content-section active">
+            <h2>Estadísticas Financieras</h2>
+            <div class="finance-content">
+                <div class="finance-chart-container">
+                    <canvas id="financeChart"></canvas>
+                </div>
+                <div class="finance-cards">
+                    <div class="finance-card">
+                        <h3>Ingresos Mensuales</h3>
+                        <p class="amount">C$ 107,200</p>
+                    </div>
+                    <div class="finance-card">
+                        <h3>Gastos Operativos</h3>
+                        <p class="amount">C$ 44,000</p>
+                        <ul>
+                            <li>Choferes: C$ 8,000 c/u</li>
+                            <li>Ayudantes: C$ 4,000 c/u</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Transportes López Lazo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="SCRIPTS.JS"></script>
+</body>
+</html>
